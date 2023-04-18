@@ -42,7 +42,7 @@ def kubectl_build(ref, context, build_args={}, dockerfile=None,
             kwargs["cache_from"] = cache_from
         if pull != None:
             kwargs["pull"] = pull
-        if patform != None:
+        if platform != None:
             kwargs["platform"] = platform
         docker_build(**kwargs)
         return
